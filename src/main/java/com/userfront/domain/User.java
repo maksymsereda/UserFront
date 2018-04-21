@@ -1,8 +1,10 @@
 package com.userfront.domain;
 
+import java.util.List;
+
 public class User {
     private Long userId;
-    private String userName;
+    private String username;
     private String password;
     private String firstName;
     private String lastName;
@@ -27,12 +29,12 @@ public class User {
         this.userId = userId;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -119,7 +121,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "userId=" + userId +
-                ", userName='" + userName + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -132,4 +134,5 @@ public class User {
                 ", recipientList=" + recipientList +
                 '}';
     }
+    
 }
